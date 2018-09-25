@@ -6,7 +6,8 @@
     "cv": "resources/CV.pdf",
     "email": "florent.delgrange@umons.ac.be",
     "phone": "+32 65 37 33 01",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "summary": "I am a PhD student co-supervised by <a href='http://math.umons.ac.be/staff/Randour.Mickael/index.html'>Mickael Randour</a> at the <a href='https://web.umons.ac.be/en/'>Université de Mons (UMONS)</a> in the Mathematics department of the Faculty of Science, and <a href='http://www-i2.informatik.rwth-aachen.de/~katoen/'>Joost-Pieter Katoen</a>  at the <a href='http://www.rwth-aachen.de/'>RWTH Aachen University</a> in the Computer Science department. <br/><br/> Before starting my PhD thesis in September 2018, I obtained my Master's degree in Computer Science at UMONS.",
+    "research": "My research interests are about verification and synthesis in stochastic systems involving multiple objectives specifications.",
     "location": {
       "address": "UMONS - Faculty of Science Mathematics Department. Avenue Victor Maistriau, 19",
       "postalCode": "7000",
@@ -69,12 +70,12 @@
     [
       {
         "name": "UMONS",
-        "path": "resources/UMONS.jpg",
+        "path": "resources/UMONS+txt.eps",
         "website": "https://web.umons.ac.be/en/"
       },
       {
         "name": "RWTH Aachen University",
-        "path": "resources/rwth.jpg",
+        "path": "resources/rwth.eps",
         "website": "http://www.rwth-aachen.de"
       }
     ]

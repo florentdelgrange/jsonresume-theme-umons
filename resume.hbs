@@ -194,7 +194,16 @@
           {{/each}}
         </div>
       </section>
-      {{/if}} {{#if resume.volunteer.length}}
+      {{/if}}
+      {{#if resume.basics.research}}
+      <section class='card'>
+        <div class='section-header'>Research interests</div>
+        <div class='section-content' id='summary'>
+          {{{resume.basics.research}}}
+        </div>
+      </section>
+      {{/if}}
+      {{#if resume.volunteer.length}}
       <section class='card'>
         <div class='section-header'>Projects</div>
         <div class='section-content' id='projects'>
