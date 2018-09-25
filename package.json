@@ -1,0 +1,11 @@
+{
+  "name": "jsonresume-theme-umons",
+  "version": "0.0.1",
+  "description": "Spartacus-umons theme for JSON Resume",
+  "author": "Debbie Facey -- Florent Delgrange",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
+    "moment": "^2.14.1"
+  }
+}
