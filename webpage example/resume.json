@@ -7,7 +7,7 @@
     "email": "florent.delgrange@umons.ac.be",
     "phone": "+32 65 37 33 01",
     "summary": "I am a PhD student co-supervised by <a href='http://math.umons.ac.be/staff/Randour.Mickael/index.html'>Mickael Randour</a> at the <a href='https://web.umons.ac.be/en/'>Université de Mons (UMONS)</a> in the Mathematics department of the Faculty of Science, and <a href='http://www-i2.informatik.rwth-aachen.de/~katoen/'>Joost-Pieter Katoen</a>  at the <a href='http://www.rwth-aachen.de/'>RWTH Aachen University</a> in the Computer Science department. <br/><br/> Before starting my PhD thesis in September 2018, I obtained my Master's degree in Computer Science at UMONS.",
-    "research": "My research interests are about verification and synthesis in stochastic systems involving multiple objectives specifications.",
+    "research": "My research interests are about verification and synthesis in stochastic systems, involving multiple objectives.",
     "location": {
       "address": "UMONS - Faculty of Science Mathematics Department. Avenue Victor Maistriau, 19",
       "postalCode": "7000",
@@ -16,19 +16,31 @@
     },
     "profiles": [
       {
-        "network": "github",
+        "network": "Github",
         "username": "theGreatGiorgio",
         "url": "https://github.com/theGreatGiorgio"
       }
     ]
   },
+  "events": [
+    {"year": "2018",
+      "list":
+      [
+        {"name": "HIGHLIGHTS", "place": "Berlin"},
+        {"name": "MOVEP", "place": "ENS Cachan"},
+        {"name": "MoRe at FLoC 2018", "place": "University of Oxford"},
+        {"name": "Logic and learning at FoPPS 2018", "place": "University of Oxford"},
+        {"name": "Logic and learning", "place": "The Alan Turing Institute, London"}
+      ]
+    }
+  ],
   "teaching": [
     {
       "course": "Formal methods for system design",
       "website": "http://math.umons.ac.be/staff/Randour.Mickael/courses.html",
       "position": "Teaching assistant",
       "summary": "Computer Science and Mathematics students (1st and 2nd Master's degree)",
-      "startDate": "2018",
+      "startDate": "2018-09-01",
       "endDate": null
     }
   ],

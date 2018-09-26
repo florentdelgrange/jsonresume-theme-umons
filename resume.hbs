@@ -150,11 +150,11 @@
         {{#if resume.basics.cv}}
         <section class='card'>
           <div class='section-content' id='resume'>
-            <li>
-              <a href="{{resume.basics.cv}}">
+            <ul  style="list-style-type:circle">
+              <li><a href="{{resume.basics.cv}}">
                 Curriculum Vitae
-              </a>
-            </li>
+              </a></li>
+            </ul>
          </div>
         </section>
         {{/if}}
@@ -183,41 +183,41 @@
                 {{summary}}
               </div>
               {{/if}} {{#if highlights.length}}
-              <ul class="list">
+              <ul  style="list-style-type:circle">
                 {{#each highlights}}
-                <li>{{.}}</li>
-                {{/each}}
-              </ul>
-              {{/if}}
-            </div>
+              <li>{{.}}</li>
+              {{/each}}
+            </ul>
+            {{/if}}
           </div>
-          {{/each}}
         </div>
-      </section>
-      {{/if}}
-      {{#if resume.basics.research}}
-      <section class='card'>
-        <div class='section-header'>Research interests</div>
-        <div class='section-content' id='summary'>
-          {{{resume.basics.research}}}
-        </div>
-      </section>
-      {{/if}}
-      {{#if resume.volunteer.length}}
-      <section class='card'>
-        <div class='section-header'>Projects</div>
-        <div class='section-content' id='projects'>
-          {{#each resume.volunteer}}
-          <div class='project last'>
-            <div class='project-info'>
-              <div class='title'>{{#if summary}}{{summary}}{{/if}}</div>
-              {{#if website}}<a class='content' href='{{website}}'>{{website}}</a>{{/if}}
-            </div>
-            <div class='info'>
-              {{#if highlights.length}}
-              <ul class="list">
-                {{#each highlights}}
-                <li>{{.}}</li>
+        {{/each}}
+      </div>
+    </section>
+    {{/if}}
+    {{#if resume.basics.research}}
+    <section class='card'>
+      <div class='section-header'>Research interests</div>
+      <div class='section-content' id='summary'>
+        {{{resume.basics.research}}}
+      </div>
+    </section>
+    {{/if}}
+    {{#if resume.volunteer.length}}
+    <section class='card'>
+      <div class='section-header'>Projects</div>
+      <div class='section-content' id='projects'>
+        {{#each resume.volunteer}}
+        <div class='project last'>
+          <div class='project-info'>
+            <div class='title'>{{#if summary}}{{summary}}{{/if}}</div>
+            {{#if website}}<a class='content' href='{{website}}'>{{website}}</a>{{/if}}
+          </div>
+          <div class='info'>
+            {{#if highlights.length}}
+            <ul  style="list-style-type:circle">
+              {{#each highlights}}
+              <li>{{.}}</li>
                 {{/each}}
               </ul>
               {{/if}}
@@ -249,12 +249,31 @@
             <div class='info'>
               {{#if summary}}
               <div class="summary">
-                <li><small>{{summary}}</small></li>
+                <ul style="list-style-type:none"><small>{{summary}}</small></ul>
               </div>
               {{/if}}
             </div>
           </div>
           {{/each}}
+        </div>
+      </section>
+      {{/if}}
+      {{#if resume.events.length}}
+      <section class='card' style="margin-bottom: 48px;">
+        <div class='section-header'>Attended events</div>
+        <div class='section-content' id='events'>
+          <small>
+          <ul  style="list-style-type:circle">
+          {{#each resume.events}}
+          <li>
+            <b>{{year}}</b>:
+            {{#each list}}
+            {{name}} ({{#if role}}{{role}}, {{/if}}<i>{{place}}</i>){{#unless @last}}, {{/unless}}
+            {{/each}}.
+          </li>
+          {{/each}}
+          </ul>
+          </small>
         </div>
       </section>
       {{/if}}
