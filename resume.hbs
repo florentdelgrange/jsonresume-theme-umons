@@ -205,17 +205,17 @@
     {{/if}}
     {{#if resume.volunteer.length}}
     <section class='card'>
-      <div class='section-header'>Projects</div>
+      <div class='section-header'>Projects and tools</div>
       <div class='section-content' id='projects'>
         {{#each resume.volunteer}}
         <div class='project last'>
           <div class='project-info'>
             <div class='title'>{{#if summary}}{{summary}}{{/if}}</div>
-            {{#if website}}<a class='content' href='{{website}}'>{{website}}</a>{{/if}}
+            {{#if website}}<a class='content' href='{{website}}'>[website]</a>{{/if}}
           </div>
           <div class='info'>
             {{#if highlights.length}}
-            <ul  style="list-style-type:circle">
+            <ul style="list-style-type:none">
               {{#each highlights}}
               <li>{{.}}</li>
                 {{/each}}
@@ -226,38 +226,39 @@
           {{/each}}
         </div>
       </section>
-      {{/if}}
-      {{#if resume.teaching.length}}
-      <section class='card'>
-        <div class='section-header'>Teaching</div>
-        <div class='section-content' id='teaching'>
-          {{#each resume.teaching}}
-          <div class='teaching'>
-            <div class='teaching-info'>
-              <div class='title'>
-                {{#if course}}
-                  <a href='{{#if website}}{{website}}{{/if}}'>
-                  		{{course}}
-                  </a>
-                 {{/if}}
-                 {{#if position}} {{position}} {{/if}}
-              </div>
-              <div class='duration'>
-                {{#if startDate}} {{prettifyDate startDate}} {{/if}} {{#if endDate}} - {{prettifyDate endDate}} {{else}} - Present {{/if}}
-              </div>
+    {{/if}}
+    {{#if resume.teaching.length}}
+    <section class='card'>
+      <div class='section-header'>Teaching</div>
+      <div class='section-content' id='teaching'>
+        {{#each resume.teaching}}
+        <div class='teaching'>
+          <div class='teaching-info'>
+            <div class='title'>
+              {{#if course}}
+                <a href='{{#if website}}{{website}}{{/if}}'>
+                    {{course}}
+                </a>
+               {{/if}}
+               {{#if position}} {{position}} {{/if}}
             </div>
-            <div class='info'>
-              {{#if summary}}
-              <div class="summary">
-                <ul style="list-style-type:none"><small>{{summary}}</small></ul>
-              </div>
-              {{/if}}
+            <div class='duration'>
+              {{#if startDate}} {{prettifyDate startDate}} {{/if}} {{#if endDate}} - {{prettifyDate endDate}} {{else}} - Present {{/if}}
             </div>
           </div>
-          {{/each}}
+          <div class='info'>
+            {{#if summary}}
+            <div class="summary">
+              <ul style="list-style-type:none"><small>{{summary}}</small></ul>
+            </div>
+            {{/if}}
+          </div>
         </div>
-      </section>
-      {{/if}}
+        <br/>
+        {{/each}}
+      </div>
+    </section>
+    {{/if}}
       {{#if resume.events.length}}
       <section class='card' style="margin-bottom: 48px;">
         <div class='section-header'>Attended events</div>
