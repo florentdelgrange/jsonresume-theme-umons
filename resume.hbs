@@ -37,6 +37,16 @@
         </div>
       </section>
       {{/if}}
+      {{#if resume.basics.news}}
+      <section class='card'>
+        <div class='section-header'>News</div>
+        <div class='section-content' id='news'>
+          <div>
+          <i>{{#resume.basics}}{{news}}{{/resume.basics}}</i>
+          </div>
+        </div>
+      </section>
+      {{/if}}
       {{#resume.basics}}
       <section class='card'>
         <div class='section-header'>Contact</div>
